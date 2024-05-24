@@ -3,7 +3,7 @@
 
 using namespace std::chrono_literals;
 
-Ultrasonic sensor(GPIO_NUM_1, GPIO_NUM_2); // Put correct GPIO pin numbers
+Ultrasonic sensor(GPIO_NUM_4, GPIO_NUM_2); // Put correct GPIO pin numbers trig, echo
 
 void setup() {
     sensor.init(); 
@@ -22,4 +22,4 @@ void loop() {
     std::cout << std::endl;
 
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
-}
+} 
